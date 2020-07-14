@@ -1,0 +1,32 @@
+# 服务端口
+server:
+  port: 8002
+
+  #连接配置信息
+spring:
+  application:
+    name: config-server-jdbc
+  profiles:
+    active: jdbc
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/xutingyin/spring-cloud-rocketmq-transaction.git
+          username: xutingyin
+          password: xty7758034198
+        default-label: dev
+        jdbc:
+          sql: SELECT akey , avalue FROM config_server where APPLICATION=? and APROFILE=? and LABEL=?
+  # mysql 属性配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.1.20.11:3306/wypt_xuty?useUnicode=true&serverTimezone=UTC&allowMultiQueries=true
+    username: root
+    password: JJ_passwd@2017
+
+#指定注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
