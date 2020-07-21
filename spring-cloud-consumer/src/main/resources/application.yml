@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-cloud-consumer
+server:
+  port: 7002
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8001/eureka/,http://peer3:8002/eureka/,http://peer3:8003/eureka/

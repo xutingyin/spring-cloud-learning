@@ -1,0 +1,10 @@
+server:
+  port: 7003
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8001/eureka/,http://peer3:8002/eureka/,http://peer3:8003/eureka/
+
+spring:
+  application:
+    name: spring-cloud-provider

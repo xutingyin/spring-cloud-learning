@@ -1,10 +1,10 @@
-package cn.xutingyin.eurekaserver;
+package cn.xutingyin.consumer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringCloudEurekaServerApplicationTests {
+class ConsumerApplicationTests {
 
     @Test
     void contextLoads() {}
