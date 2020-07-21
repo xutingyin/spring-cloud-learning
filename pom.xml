@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.xutingyin</groupId>
-    <artifactId>spring-cloud</artifactId>
+    <artifactId>spring-cloud-learning</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud</name>
+    <name>spring-cloud-learning</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
