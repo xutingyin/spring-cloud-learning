@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import cn.xutingyin.consumer.service.HelloRemote;
+import cn.xutingyin.consumer.remote.HelloRemote;
 
 /**
  * @description:服务消费者控制器

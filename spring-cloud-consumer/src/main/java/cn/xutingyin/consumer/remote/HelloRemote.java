@@ -1,4 +1,4 @@
-package cn.xutingyin.consumer.service;
+package cn.xutingyin.consumer.remote;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @date: 2020/7/21 15:58
  */
 
-@FeignClient(name = "spring-cloud-provider")
+@FeignClient(name = "spring-cloud-provider", fallback = HelloRemoteHystrix.class)
 public interface HelloRemote {
     @RequestMapping(value = "/hello")
     String hello(@RequestParam(value = "name") String name);
