@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-cloud-provider-node2
+server:
+  port: 7002
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6001/eureka/

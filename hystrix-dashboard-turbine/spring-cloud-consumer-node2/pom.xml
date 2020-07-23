@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.xutingyin</groupId>
-    <artifactId>spring-cloud-consumer</artifactId>
+    <artifactId>spring-cloud-consumer-node2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud-consumer</name>
+    <name>spring-cloud-consumer-node2</name>
     <description>spring-cloud-consumer project for Spring Boot</description>
 
     <properties>

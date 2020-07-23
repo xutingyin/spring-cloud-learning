@@ -1,4 +1,4 @@
-package cn.xutingyin.consumer.remote;
+package cn.xutingyin.turbine.remote;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;

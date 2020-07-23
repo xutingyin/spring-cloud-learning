@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.xutingyin</groupId>
-    <artifactId>spring-cloud-consumer</artifactId>
+    <artifactId>spring-cloud-turbine</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud-consumer</name>
-    <description>spring-cloud-consumer project for Spring Boot</description>
+    <name>spring-cloud-turbine</name>
+    <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -40,6 +40,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+        <!--spring-cloud-netflix-turbine-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-turbine</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-turbine</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -77,5 +87,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>

@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: hystrix-dashboard-turbine
+server:
+  port: 10001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6001/eureka/
+
+feign:
+  hystrix:
+    # 开启断路器
+    enabled: true
+turbine:
+  app-config: node1,node2,spring-cloud-provider
+  aggregator:
+    cluster-config: default
+  cluster-name-expression:  "'default'"
+  instanceUrlSuffix: actuator/hystrix.stream
+  combine-host-port: true

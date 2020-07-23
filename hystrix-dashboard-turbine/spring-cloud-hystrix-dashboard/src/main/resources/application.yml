@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: spring-cloud-hystrix-dashboard
+server:
+  port: 9001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6001/eureka/
+
+feign:
+  hystrix:
+    # 开启断路器
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
