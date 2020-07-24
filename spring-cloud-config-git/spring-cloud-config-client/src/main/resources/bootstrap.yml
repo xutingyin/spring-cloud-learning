@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      name: config
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server
+      uri: http://localhost:8001/
+      label: master  #对应git的分支。如果配置中心使用的是本地存储，则该参数无用
